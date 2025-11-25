@@ -1,88 +1,177 @@
 <!doctype html>
-<html class="no-js" lang="">
-
+<html lang="es">
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title></title>
+  <title>Jean Franco - Full Stack Developer</title>
   <link rel="stylesheet" href="css/style.css">
-  <meta name="description" content="">
-
-  <meta property="og:title" content="">
-  <meta property="og:type" content="">
-  <meta property="og:url" content="">
-
-  <meta property="og:image" content="">
-  <meta property="og:image:alt" content="">
-
-  <link rel="icon" href="/favicon.ico" sizes="any">
-  <link rel="icon" href="/icon.svg" type="image/svg+xml">
-  <link rel="apple-touch-icon" href="icon.png">
-
-  <link rel="manifest" href="site.webmanifest">
-  <meta name="theme-color" content="#fafafa">
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
-
 <body>
-<header class="header">
-  <div class="container">
-    <h1>Hola, soy <span>Jean Franco</span></h1>
-    <p>Un programador apasionado por la tecnología y la innovación</p>
-  </div>
-</header>
-
+<!-- Navbar -->
 <nav class="navbar">
-  <ul>
-    <li><a href="#about">Sobre mí</a></li>
-    <li><a href="#projects">Proyectos</a></li>
-    <li><a href="#contact">Contacto</a></li>
-  </ul>
+  <div class="container">
+    <div class="nav-brand">JF</div>
+    <ul class="nav-menu">
+      <li><a href="#home">Inicio</a></li>
+      <li><a href="#about">Sobre mí</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#projects">Proyectos</a></li>
+      <li><a href="#contact">Contacto</a></li>
+    </ul>
+  </div>
 </nav>
 
-<section id="about" class="about">
-  <div class="container">
-    <h2>Sobre mí</h2>
-    <p>Soy un desarrollador especializado en crear soluciones modernas y eficientes. Mi experiencia abarca proyectos interactivos, aplicaciones web y simulaciones físicas.</p>
+<!-- Hero -->
+<section id="home" class="hero">
+  <div class="hero-bg"></div>
+  <div class="container hero-content">
+    <h1 class="glitch">Jean Franco</h1>
+    <p class="hero-subtitle">Full Stack Developer</p>
+    <p class="hero-desc">Creando experiencias digitales innovadoras</p>
+    <div class="hero-cta">
+      <a href="#projects" class="btn btn-primary">Ver Proyectos</a>
+      <a href="#contact" class="btn btn-outline">Contactar</a>
+    </div>
   </div>
 </section>
 
-<section id="projects" class="projects">
+<!-- About -->
+<section id="about" class="section">
   <div class="container">
-    <h2>Proyectos Destacados</h2>
-    <div class="project-list">
-      <div class="project">
-        <h3>Hyperium</h3>
-        <p>Sistema de informacion de una tienda en línea. <a href="https://github.com/TheFive40/FRONT_TIENDA" target="_blank">Ver en GitHub</a></p>
+    <h2 class="section-title">Sobre mí</h2>
+    <div class="about-content">
+      <p>Desarrollador apasionado por crear soluciones innovadoras. Especializado en aplicaciones web modernas, desde interfaces interactivas hasta sistemas complejos de backend.</p>
+    </div>
+  </div>
+</section>
+
+<!-- Skills -->
+<section id="skills" class="section section-dark">
+  <div class="container">
+    <h2 class="section-title">Habilidades</h2>
+    <div class="skills-grid">
+      <div class="skill-card">
+        <div class="skill-icon">⚡</div>
+        <h3>Frontend</h3>
+        <p>React, Vue, JavaScript, HTML5, CSS3</p>
       </div>
-      <div class="project">
-        <h3>Gravitagora Simulator</h3>
-        <p>Simulador interactivo de física. Aprende los conceptos mas fascinantes del mundo de la fisica <a href="https://github.com/TheFive40/Gravitagora-Simulator" target="_blank">Ver en GitHub</a></p>
+      <div class="skill-card">
+        <div class="skill-icon">🔧</div>
+        <h3>Backend</h3>
+        <p>Node.js, Python, Java, API REST</p>
       </div>
-      <div class="project">
-        <h3>YouTube</h3>
-        <p>Aplicación para la gestión de videos y visualizacion de datos estadisticos. <a href="https://github.com/TheFive40/YouTube" target="_blank">Ver en GitHub</a></p>
+      <div class="skill-card">
+        <div class="skill-icon">💾</div>
+        <h3>Database</h3>
+        <p>MongoDB, PostgreSQL, Firebase</p>
+      </div>
+      <div class="skill-card">
+        <div class="skill-icon">🚀</div>
+        <h3>DevOps</h3>
+        <p>Docker, Git, CI/CD, AWS</p>
       </div>
     </div>
   </div>
 </section>
 
-<section id="contact" class="contact">
+<!-- Projects -->
+<section id="projects" class="section">
   <div class="container">
-    <h2>Contacto</h2>
-    <p>¿Quieres colaborar o saber más sobre mi trabajo? ¡Hablemos!</p>
-    <form action="https://formspree.io/f/mjkvzwew" method="POST">
-      <input type="text" name="name" placeholder="Tu nombre" required>
-      <input type="email" name="email" placeholder="Tu email" required>
-      <textarea name="message" placeholder="Tu mensaje" required></textarea>
-      <button type="submit">Enviar</button>
-    </form>
+    <h2 class="section-title">Proyectos</h2>
+    <div class="projects-grid">
+      <div class="project-card">
+        <div class="project-header">
+          <h3>Hyperium</h3>
+          <span class="project-tag">E-commerce</span>
+        </div>
+        <p>Sistema completo de tienda en línea con gestión de inventario y pagos.</p>
+        <div class="project-tech">
+          <span>React</span>
+          <span>Node.js</span>
+          <span>MongoDB</span>
+        </div>
+        <a href="https://github.com/TheFive40/FRONT_TIENDA" target="_blank" class="project-link">Ver Proyecto →</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <h3>Gravitagora Simulator</h3>
+          <span class="project-tag">Simulación</span>
+        </div>
+        <p>Simulador interactivo de física con visualización en tiempo real.</p>
+        <div class="project-tech">
+          <span>JavaScript</span>
+          <span>Canvas</span>
+          <span>Física</span>
+        </div>
+        <a href="https://github.com/TheFive40/Gravitagora-Simulator" target="_blank" class="project-link">Ver Proyecto →</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <h3>YouTube Analytics</h3>
+          <span class="project-tag">Analytics & AI</span>
+        </div>
+        <p>Dashboard para análisis de videos con métricas y estadísticas.</p>
+        <div class="project-tech">
+          <span>Vue.js</span>
+          <span>API</span>
+          <span>Charts</span>
+        </div>
+        <a href="https://github.com/TheFive40/YouTube" target="_blank" class="project-link">Ver Proyecto →</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <h3>SpaManager</h3>
+          <span class="project-tag">Management</span>
+        </div>
+        <p>Sistema de gestión para spas con reservas y control de inventario.</p>
+        <div class="project-tech">
+          <span>React</span>
+          <span>Firebase</span>
+          <span>Material-UI</span>
+        </div>
+        <a href="https://github.com/TheFive40/SpaManager" target="_blank" class="project-link">Ver Proyecto →</a>
+      </div>
+
+      <div class="project-card">
+        <div class="project-header">
+          <h3>Foopilot</h3>
+          <span class="project-tag">Management</span>
+        </div>
+        <p>Sistema de informacion para gestionar tu restaurante. Pedidos, la carta, inventario. ¡Y mucho más!</p>
+        <div class="project-tech">
+          <span>Next.js</span>
+          <span>AI</span>
+          <span>TypeScript</span>
+        </div>
+        <a href="https://github.com/TheFive40/Foopilot" target="_blank" class="project-link">Ver Proyecto →</a>
+      </div>
+    </div>
   </div>
 </section>
 
+<!-- Contact -->
+<section id="contact" class="section section-dark">
+  <div class="container">
+    <h2 class="section-title">Contacto</h2>
+    <div class="contact-content">
+      <p class="contact-text">¿Tienes un proyecto en mente? Hablemos.</p>
+      <form action="https://formspree.io/f/mjkvzwew" method="POST" class="contact-form">
+        <input type="text" name="name" placeholder="Nombre" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <textarea name="message" placeholder="Mensaje" rows="5" required></textarea>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </div>
+</section>
 
+<!-- Footer -->
 <footer class="footer">
-  <p>© 2024 TheFive40. Todos los derechos reservados.</p>
+  <p>© 2024 Jean Franco • Full Stack Developer</p>
 </footer>
 </body>
-
 </html>
